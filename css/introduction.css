@@ -1,0 +1,204 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  vertical-align: top;
+  font-family: 微軟正黑體;
+  transition: 1s;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  text-align: center;
+  height: 150px;
+  letter-spacing: 10px;
+  background-color: #999;
+}
+.header h5 {
+  margin: 0px;
+  top: 10px;
+}
+
+.line {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.5em;
+}
+
+.line1 {
+  width: 100px;
+  border: solid 1px;
+}
+
+.title {
+  border: solid 3px;
+  line-height: 30px;
+}
+
+.bottom {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+}
+
+.left, .right {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  letter-spacing: 3px
+}
+
+.left {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+.left img {
+  width: 150px;
+  height: 170px;
+  border-radius: 100%;
+  
+}
+.left .introduction {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.left .introduction h3 {
+  top: 20px;
+}
+.left .introduction li {
+  list-style-type: none;
+  letter-spacing: 1px;
+  width: 200px;
+}
+.left .introduction .title1 {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.right {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.right .mylife {
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin-top: 0px;
+}
+.right .exp {
+  width: 100%;
+}
+.right .exp h2 {
+  margin-bottom: 0px;
+}
+.right .exp hr {
+  margin-top: 0px;
+}
+.right .exp li span {
+  position: relative;
+  top: 3px;
+  left: 15px;
+  font-size: 13px;
+}
+.right .skills {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.right .skills h2 {
+  margin-bottom: 0;
+}
+.right .skills hr {
+  width: 100%;
+  padding: 0;
+  margin-top: 0px;
+}
+.right .skills .linebox {
+  border: solid 1px;
+  width: 400px;
+  height: 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+.right .skills .linebox .box {
+  position: absolute;
+  width: 25%;
+  height: 15px;
+}
+.right .skills .linebox .box1 {
+  left: 0%;
+  border-right: dashed 1px;
+}
+.right .skills .linebox .box2 {
+  left: 25%;
+  border-right: dashed 1px;
+  border-left: dashed 1px;
+  transition-delay: 0.5s;
+}
+.right .skills .linebox .box3 {
+  left: 50%;
+  border-right: dashed 1px;
+  border-left: dashed 1px;
+}
+.right .skills .linebox .box4 {
+  left: 75%;
+  border-left: dashed 1px;
+}
+.right .skills .text {
+  width: 400px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+}
+.right .skills .text .text1 {
+  width: 100px;
+}
+.right .skills .text .text2 {
+  width: 100px;
+}
+.right .skills .text .text3 {
+  width: 100px;
+}
+.right .skills .text .text4 {
+  width: 100px;
+}
+.right .skills .cirbox {
+  display: flex;
+  flex-direction: row;
+}
+.right .skills .cirbox .cir {
+  width: 10px;
+  height: 10px;
+  border: solid 1px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.right .skills .cirbox .cir2 {
+  transition-delay: 0.5s;
+}
+
+.footer {
+  text-align: center;
+}
