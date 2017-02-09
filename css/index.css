@@ -1,0 +1,66 @@
+﻿@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
+  background-color: transparent;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top .navbar-brand {
+  color: black;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+  color: black;
+  transition: 0.5s;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+  color: white;
+}
+
+header.jumbotron {
+  padding: 200px 0px;
+  background-image: url(http://cdn.clm02.com/goez1.com/75010/1477039001_752.jpg);
+  background-size: 100%;
+  color: #fff;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+section#section_about {
+  text-align: center;
+}
+section#section_about .img_wrap {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+}
+section#section_about .img_wrap img {
+  width: 100%;
+}
+
+section#section_home .col-sm-5 img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 250px;
+}
+
+#footer {
+  text-align: center;
+  color: white;
+  background-image: url(http://cdn.clm02.com/goez1.com/75010/1477039001_752.jpg);
+  background-size: 100%;
+  background-position: 0;
+  margin-bottom: 0px;
+}
+#footer input {
+  margin: 0 auto;
+  max-width: 300px;
+}
+#footer button {
+  margin-top: 15px;
+}

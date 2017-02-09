@@ -1,66 +1,95 @@
-﻿@charset "UTF-8";
-* {
-  font-family: 微軟正黑體;
+/*=================================*/
+/* Nivo Slider Demo
+/* November 2010
+/* By: Gilbert Pellegrom
+/* http://dev7studios.com
+/*=================================*/
+
+/*====================*/
+/*=== Reset Styles ===*/
+/*====================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline;
+}
+body {
+	line-height:1;
+	color:black;
+	background:white;
+}
+table {
+	border-collapse:separate;
+	border-spacing:0;
+}
+caption, th, td {
+	text-align:left;
+	font-weight:normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:"";
+}
+blockquote, q {
+	quotes:"" "";
+}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: bold;
+/*===================*/
+/*=== Main Styles ===*/
+/*===================*/
+body {
+	font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	color:#333;
+	background:#eee;
 }
 
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
-  background-color: transparent;
+a, a:visited {
+	color:blue;
+	text-decoration:none;
 }
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top .navbar-brand {
-  color: black;
-}
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
-  color: black;
-  transition: 0.5s;
-}
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
-  color: white;
+a:hover, a:active {
+	color:#000;
+	text-decoration:none;
 }
 
-header.jumbotron {
-  padding: 200px 0px;
-  background-image: url(http://cdn.clm02.com/goez1.com/75010/1477039001_752.jpg);
-  background-size: 100%;
-  color: #fff;
-  text-align: center;
-  background-attachment: fixed;
+#dev7link {
+    position:absolute;
+    top:0;
+    left:50px;
+    background:url(images/dev7logo.png) no-repeat;
+    width:60px;
+    height:67px;
+    border:0;
+    display:block;
+    text-indent:-9999px;
 }
 
-section#section_about {
-  text-align: center;
-}
-section#section_about .img_wrap {
-  margin: 0 auto;
-  width: 120px;
-  height: 120px;
-}
-section#section_about .img_wrap img {
-  width: 100%;
+.slider-wrapper { 
+	width: 80%; 
+	margin: 100px auto;
 }
 
-section#section_home .col-sm-5 img {
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-  height: 250px;
-}
-
-#footer {
-  text-align: center;
-  color: white;
-  background-image: url(http://cdn.clm02.com/goez1.com/75010/1477039001_752.jpg);
-  background-size: 100%;
-  background-position: 0;
-  margin-bottom: 0px;
-}
-#footer input {
-  margin: 0 auto;
-  max-width: 300px;
-}
-#footer button {
-  margin-top: 15px;
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
 }
