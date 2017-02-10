@@ -42,12 +42,14 @@ section#section_about .img_wrap img {
   width: 100%;
 }
 
-section#section_home .col-sm-5 img {
+section#section_home .col-md-5 img {
   display: block;
   margin: 0 auto;
   width: 300px;
   height: 250px;
 }
+
+
 
 #footer {
   text-align: center;
@@ -63,4 +65,24 @@ section#section_home .col-sm-5 img {
 }
 #footer button {
   margin-top: 15px;
+}
+
+.totop{
+  text-align: center;
+ font-size: 30px;
+ position: fixed;
+ bottom: 250px;
+ right: 15px;
+ color: #71788E;
+ cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+  * {
+    display: none;
+  }
+  .totop {
+    font-size: 50px;
+    bottom: 100px;
+  }
 }
