@@ -1,0 +1,134 @@
+@charset "UTF-8";
+* {
+  vertical-align: middle;
+  position: relative;
+  font-family: 微軟正黑體;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #E9EBEE;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topbar {
+  height: 50px;
+  background-color: #3B5998;
+}
+.topbar .icon {
+  margin: 10px;
+  height: 30px;
+}
+.topbar input {
+  height: 30px;
+  margin: 10px;
+  width: 300px;
+  margin-left: 0px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: none;
+}
+
+.cover {
+  height: 330px;
+  background-image: url("https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/11796196_10204370903741925_4102862311523767169_n.jpg?oh=028c65f19040aa8c5d3d21e98782ac73&oe=5918D6AB");
+  background-position: top;
+}
+
+.midbar {
+  height: 50px;
+  background-color: #fff;
+}
+.midbar .personimg {
+  width: 130px;
+  height: 130px;
+  background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/11781767_10204370912982156_6457243237086701515_n.jpg?oh=337cba94df018d443a6b3cea11453011&oe=590B64CC);
+  background-size: 100% auto;
+  border: solid 3px white;
+  position: absolute;
+  top: -100px;
+  left: 20px;
+}
+.midbar .personimg .names {
+  position: absolute;
+  right: -120px;
+  color: white;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.midbar .personimg .names h2, .midbar .personimg .names h5 {
+  margin: 0;
+}
+.midbar .personimg .names h2 {
+  font-size: 32px;
+}
+.midbar .personimg .names h5 {
+  font-size: 16px;
+}
+
+.bottombar {
+  background-color: #fff;
+  width: 35%;
+  min-width: 350px;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.bottombar i {
+  width: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .topbar {
+    height: 60px;
+  }
+  .topbar .icon {
+    height: 40px;
+  }
+  .topbar input {
+    height: 30px;
+    width: calc(100% - 40px - 60px);
+    background-color: #2d4373;
+    color: white;
+  }
+
+  .midbar {
+    height: 150px;
+  }
+  .midbar .personimg {
+    width: 160px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .midbar .personimg .names {
+    right: initial;
+    left: 50%;
+    top: 100%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    white-space: nowrap;
+    color: black;
+  }
+
+  .bottombar {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .bottombar p {
+    border-top: solid 1px #bbbbbb;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+  }
+}

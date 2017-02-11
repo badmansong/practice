@@ -1,0 +1,117 @@
+//最大內容寬度
+
+$content_max_width: 1024px
+$break_width: 800px
+//顏色定義
+
+$color_lightblue: #E9EBEE
+$color_blue: #3B5998
+$color_white: #fff
+$color_black: #555
+
+
+
+*
+  // border: solid 1px
+  vertical-align: middle
+  position: relative
+  font-family: 微軟正黑體
+body,html
+  margin: 0
+  padding: 0
+  background-color: $color_lightblue
+.container
+  max-width: $content_max_width
+  margin-left: auto
+  margin-right: auto
+.topbar
+  height: 50px
+  background-color: $color_blue
+  .icon
+    margin: 10px
+    height: 30px
+  input
+    height: 30px
+    margin: 10px
+    width: 300px
+    margin-left: 0px
+    border-radius: 5px
+    padding-left: 10px
+    border: none
+.cover
+  height: 330px
+  background-image: url("https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/11796196_10204370903741925_4102862311523767169_n.jpg?oh=028c65f19040aa8c5d3d21e98782ac73&oe=5918D6AB")
+  background-position: top
+  
+.midbar
+  height: 50px
+  background-color: $color_white
+  .personimg
+    width: 130px
+    height: 130px
+    background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/11781767_10204370912982156_6457243237086701515_n.jpg?oh=337cba94df018d443a6b3cea11453011&oe=590B64CC)
+    background-size: 100% auto
+    border: solid 3px white
+    position: absolute
+    top: -100px
+    left: 20px
+    .names
+      position: absolute
+      right: -120px
+      color: white
+      top: 50%
+      transform: translateY(-50%)
+      h2,h5
+        margin: 0
+      h2
+        font-size: 32px
+      h5
+        font-size: 16px
+.bottombar
+  // height: 200px
+  background-color: $color_white
+  width: 35%
+  min-width: 350px
+  padding: 20px
+  font-size: 14px
+  line-height: 25px
+  margin-top: 10px
+  i
+    width: 20px
+    
+@media screen and (max-width: $break_width)
+  .topbar
+    height: 60px
+    .icon
+      height: 40px
+    input
+      height: 30px
+      width: calc(100% - 40px - 60px)
+      background-color: darken($color_blue,10)
+      color: white
+  .midbar
+    height: 150px
+    .personimg
+      width: 160px
+      left: 50%
+      transform: translateX(-50%)
+      .names
+        right: initial
+        left: 50%
+        top: 100%
+        transform: translateX(-50%)
+        white-space: nowrap
+        color: black
+      
+  .bottombar
+    margin: 0
+    width: 100%
+    box-sizing: border-box
+    p
+      border-top: solid 1px lighten($color_black,40)
+      padding-top: 10px
+      padding-left: 20px
+      padding-right: 20px
+      font-size: 12px
+      
+  
