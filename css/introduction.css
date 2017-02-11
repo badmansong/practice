@@ -101,6 +101,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin-top: 0px;
+  line-height: 20px;
 }
 .right .exp {
   width: 100%;
