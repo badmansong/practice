@@ -7,19 +7,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold;
 }
 
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
-  background-color: transparent;
-}
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top .navbar-brand {
+.navbar-header .navbar-brand {
   color: black;
+  margin-left: 10px;
 }
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
-  color: black;
-  transition: 0.5s;
-}
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
-  color: white;
-}
+
 
 header.jumbotron {
   padding: 200px 0px;
@@ -76,13 +68,16 @@ section#section_home .col-md-5 img {
  color: #71788E;
  cursor: pointer;
 }
+.totop:hover{
+  transform: scale(1.5);
+}
 
-@media screen and (max-width: 360px) {
-  * {
-    display: none;
+@media only screen and (max-device-width: 768px) {
+  header.jumbotron{
+    padding: 80px 0px ;
+    background-size: 100% auto;
   }
-  .totop {
-    font-size: 50px;
-    bottom: 100px;
+  .totop{
+    display: none;
   }
 }
