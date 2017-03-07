@@ -1,84 +1,99 @@
 ﻿@charset "UTF-8";
 * {
-  font-family: 微軟正黑體;
+    font-family: 微軟正黑體;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: bold;
 }
 
 .navbar-header .navbar-brand {
-  color: black;
-  margin-left: 10px;
+    color: black;
+    margin-left: 10px;
 }
 
-
 header.jumbotron {
-  padding: 200px 0px;
-  background-image: url(http://cdn.clm02.com/goez1.com/75010/1477039001_752.jpg);
-  background-size: 100%;
-  color: #fff;
-  text-align: center;
-  background-attachment: fixed;
+
+    padding: 200px 0px;
+    background-image: url(http://cdn.clm02.com/goez1.com/75010/1477039001_752.jpg);
+    background-size: 100%;
+    color: #fff;
+    text-align: center;
+    background-attachment: fixed;
 }
 
 section#section_about {
-  text-align: center;
+    text-align: center;
 }
+
 section#section_about .img_wrap {
-  margin: 0 auto;
-  width: 120px;
-  height: 120px;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
 }
+
 section#section_about .img_wrap img {
-  width: 100%;
+    width: 100%;
 }
 
 section#section_home .col-md-5 img {
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-  height: 250px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
 }
-
-
 
 #footer {
-  text-align: center;
-  color: white;
-  background-image: url(http://cdn.clm02.com/goez1.com/75010/1477039001_752.jpg);
-  background-size: 100%;
-  background-position: 0;
-  margin-bottom: 0px;
-}
-#footer input {
-  margin: 0 auto;
-  max-width: 300px;
-}
-#footer button {
-  margin-top: 15px;
+    text-align: center;
+    color: white;
+    background-image: url(http://cdn.clm02.com/goez1.com/75010/1477039001_752.jpg);
+    background-size: 100%;
+    background-position: 0;
+    margin-bottom: 0px;
 }
 
-.totop{
-  text-align: center;
- font-size: 30px;
- position: fixed;
- bottom: 250px;
- right: 15px;
- color: #71788E;
- cursor: pointer;
+#footer input {
+    margin: 0 auto;
+    max-width: 300px;
 }
-.totop:hover{
-  transform: scale(1.5);
+
+#footer button {
+    margin-top: 15px;
+}
+
+.totop {
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    bottom: 250px;
+    right: 15px;
+    color: #71788E;
+    cursor: pointer;
+}
+
+.totop:hover {
+    transform: scale(1.5);
 }
 
 @media(max-width: 768px) {
-  header.jumbotron{
-    height: 200px;
-    padding: 100px 0px;
-  }
-
-  .totop{
-    display: none;
-  }
+    header.jumbotron {
+        
+        padding: 100px 0px 50px 0px;
+        -webkit-background-size: 110%;
+        background-size: 110%;
+    }
+    .totop {
+        display: none;
+    }
 }

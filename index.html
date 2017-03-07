@@ -1,130 +1,129 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>練習寫Bootstrap</title>
-  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css'>
-  <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>練習寫Bootstrap</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css'>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-<div id="skrollr-body">
-<nav class="nav navbar-default navbar-fixed-top navbar-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> 
-                </button>
-                <a class="navbar-brand" href="#skrollr-body">SUNG</a>
+    <div id="skrollr-body">
+        <nav class="nav navbar-default navbar-fixed-top navbar-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#skrollr-body">SUNG</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#section_about">使用技能</a></li>
+                        <li><a href="#section_home">新竹之美</a></li>
+                        <li><a href="#footer">與我聯繫</a></li>
+                        <li><a href="introduction.html" target="_blank">自我介紹</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle nav navbar-default" data-toggle="dropdown" role="button" aria-expanded="false">練習作品<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="hw\index.html" target="_blank">六角餐廳</a></li>
+                                <li><a href="facebook.html" target="_blank">仿臉書介面</a></li>
+                                <li><a href="namecard.html" target="_blank">名片</a></li>
+                                <li><a href="weatherbox.html" target="_blank">天氣盒子</a></li>
+                                <li><a href="lightbox.html" target="_blank">輪播圖片練習</a></li>
+                                <li><a href="http://codepen.io/badmansong/" target="_blank">codepen上的練習</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#section_about">使用技能</a></li>
-                    <li><a href="#section_home">新竹之美</a></li>
-                    <li><a href="#footer">與我聯繫</a></li>
-                    <li><a href="introduction.html" target="_blank">自我介紹</a></li>
-                    <li class="dropdown">
-          <a href="#" class="dropdown-toggle nav navbar-default" data-toggle="dropdown" role="button" aria-expanded="false">練習作品<span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="facebook.html" target="_blank">仿臉書介面</a></li>
-                  <li><a href="namecard.html" target="_blank">名片</a></li>
-                  <li><a href="weatherbox.html" target="_blank">天氣盒子</a></li>
-                  <li><a href="lightbox.html" target="_blank">輪播圖片練習</a></li>
-                  <li><a href="http://codepen.io/badmansong/" target="_blank">codepen上的練習</a></li>
-                </ul>
-                </li>
-                </ul>
+        </nav>
+        <header class="jumbotron">
+            <div class="container">
+                <h1 data-0="transform: translateY(-50px)" data-500="transform: translateY(0px)">阿松自學網頁練習</h1>
+                <h4>慢慢練習努力寫寫寫寫寫</h4>
             </div>
+        </header>
+        <section id="section_about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="img_wrap" data-0="transform: translateX(-50px);opacity: 0" data-300="opacity: 1;transform: translateX(0px)"><img src="http://getbootstrap.com/apple-touch-icon.png" alt="" /></div>
+                        <h2 data-0="opacity: 0" data-200="opacity: 1">Bootstrap</h2>
+                        <p data-0="opacity: 0" data-200="opacity: 1">Bootstrap是最受歡迎的HTML、CSS和JS框架，用於開發自適應網頁與行動優先的網站專案。</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="img_wrap" data-0="transform: translateX(-50px);opacity: 0" data-300="transform: translateX(0px) ;opacity: 1"><img src="https://avatars0.githubusercontent.com/u/70142?v=3&amp;s=400" alt="" /></div>
+                        <h2 data-0="opacity: 0" data-200="opacity: 1">JQuery</h2>
+                        <p data-0="opacity: 0" data-200="opacity: 1">jQuery是一套跨瀏覽器的JavaScript函式庫，簡化HTML與JavaScript之間的操作。全球前10,000個存取最高的網站中，有65%使用了jQuery，是目前最受歡迎的JavaScript函式庫。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="section_home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>新竹之美</h2>
+                    </div>
+                    <div class="col-md-5 col-sm-12" data-bottom-top="filter: grayscale(100%)" data-center="filter: grayscale(0%)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/1923%E5%B9%B4%E6%97%A5%E6%9C%AC%E7%9A%87%E5%A4%AA%E5%AD%90%E8%A3%95%E4%BB%81%E5%B7%A1%E8%A6%96%E6%96%B0%E7%AB%B9%E8%BB%8A%E7%AB%99_Japanese_Crown_Prince_Hirohito_visited_Hsinchu_Station_of_TAIWAN.jpg/270px-1923%E5%B9%B4%E6%97%A5%E6%9C%AC%E7%9A%87%E5%A4%AA%E5%AD%90%E8%A3%95%E4%BB%81%E5%B7%A1%E8%A6%96%E6%96%B0%E7%AB%B9%E8%BB%8A%E7%AB%99_Japanese_Crown_Prince_Hirohito_visited_Hsinchu_Station_of_TAIWAN.jpg" alt="" /></div>
+                    <div class="col-md-7 col-sm-12">
+                        <h3 data-0="transform: translateX(50px);opacity: 0" data-500="transform: translateX(0px);opacity: 1"> 歷史</h3>
+                        <p data-0="transform: translateX(50px);opacity: 0" data-500="transform: translateX(0px);opacity: 1"> 新竹市（官方中文羅馬字名稱：Hsinchu City），是中華民國臺灣省的市，位於臺灣本島西北部的都市，古名竹塹，是臺灣高科技代工產業的重鎮。1980年代初期成立的新竹科學工業園區，吸引了大批國內與國際廠商的投資及許多高科技人力移居，因此有「臺灣矽谷」之稱，也因九降風特別強盛別稱「風城」。</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-sm-12" data-bottom-top="filter: grayscale(100%)" data-center="filter: grayscale(0%)"><img src="http://twhere.1111.com.tw/include/shopPhoto.ashx?cNo=35438&amp;pid=75899" alt="" /></div>
+                    <div class="col-md-7 col-sm-12">
+                        <h3 data-0="transform: translateX(50px);opacity: 0" data-500="transform: translateX(0px);opacity: 1">美食</h3>
+                        <p data-0="transform: translateX(50px);opacity: 0" data-500="transform: translateX(0px);opacity: 1">新竹的貢丸特別有名，嚴格來說，貢丸到處都有人會做，也非新竹一帶的豬肉特別鮮美。新竹對貢丸的貢獻，主要是科技上的：運用機器，令貢丸可大量生產。新竹的貢丸是以木棒或機器「摃（槌擊肉塊）」出來的。而新竹貢丸的材料必須用剛宰殺不久的新鮮溫體豬肉製作，也就是所謂的「活肉」。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="section_video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12" id="video">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SP-5C-T6Kpk"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <h3>新竹旅遊</h3>
+                        <p><b>影片內容為食尚玩嘎11-新竹風城當追風少年</b>
+                            <br>想更了解可以點連結觀看唷</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="jumbotron" id="footer">
+            <div class="container">
+                <h3>與我聯繫</h3>
+                <form>
+                    <input class="form-control" placeholder="Email" />
+                    <button class="btn btn-default" type="submit">送出</button>
+                </form>
+            </div>
+            <h6> <script>document.write(new Date().getFullYear())</script>©Written and coded by JerryLi.</h6>
         </div>
-    </nav> 
-
-<header class="jumbotron">
-  <div class="container">
-    <h1 data-0="transform: translateY(-50px)" data-500="transform: translateY(0px)">阿松自學網頁練習</h1>
-    <h4>慢慢練習努力寫寫寫寫寫</h4>
-  </div>
-</header>
-<section id="section_about">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="img_wrap" data-0="transform: translateX(-50px);opacity: 0" data-300="opacity: 1;transform: translateX(0px)"><img src="http://getbootstrap.com/apple-touch-icon.png" alt=""/></div>
-        <h2 data-0="opacity: 0" data-200="opacity: 1">Bootstrap</h2>
-        <p data-0="opacity: 0" data-200="opacity: 1">Bootstrap是最受歡迎的HTML、CSS和JS框架，用於開發自適應網頁與行動優先的網站專案。</p>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="img_wrap" data-0="transform: translateX(-50px);opacity: 0" data-300="transform: translateX(0px) ;opacity: 1"><img src="https://avatars0.githubusercontent.com/u/70142?v=3&amp;s=400" alt=""/></div>
-        <h2 data-0="opacity: 0" data-200="opacity: 1">JQuery</h2>
-        <p data-0="opacity: 0" data-200="opacity: 1">jQuery是一套跨瀏覽器的JavaScript函式庫，簡化HTML與JavaScript之間的操作。全球前10,000個存取最高的網站中，有65%使用了jQuery，是目前最受歡迎的JavaScript函式庫。</p>
-      </div>
+        <div class="totop fa fa-arrow-up">
+            <h5>TOP</h5>
+        </div>
     </div>
-  </div>
-</section>
-<hr>
-<section id="section_home">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>新竹之美</h2>
-      </div>
-      <div class="col-md-5 col-sm-12" data-bottom-top="filter: grayscale(100%)" data-center="filter: grayscale(0%)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/1923%E5%B9%B4%E6%97%A5%E6%9C%AC%E7%9A%87%E5%A4%AA%E5%AD%90%E8%A3%95%E4%BB%81%E5%B7%A1%E8%A6%96%E6%96%B0%E7%AB%B9%E8%BB%8A%E7%AB%99_Japanese_Crown_Prince_Hirohito_visited_Hsinchu_Station_of_TAIWAN.jpg/270px-1923%E5%B9%B4%E6%97%A5%E6%9C%AC%E7%9A%87%E5%A4%AA%E5%AD%90%E8%A3%95%E4%BB%81%E5%B7%A1%E8%A6%96%E6%96%B0%E7%AB%B9%E8%BB%8A%E7%AB%99_Japanese_Crown_Prince_Hirohito_visited_Hsinchu_Station_of_TAIWAN.jpg" alt=""/></div>
-      <div class="col-md-7 col-sm-12">
-        <h3 data-0="transform: translateX(50px);opacity: 0" data-500="transform: translateX(0px);opacity: 1"> 歷史</h3>
-        <p data-0="transform: translateX(50px);opacity: 0" data-500="transform: translateX(0px);opacity: 1"> 新竹市（官方中文羅馬字名稱：Hsinchu City），是中華民國臺灣省的市，位於臺灣本島西北部的都市，古名竹塹，是臺灣高科技代工產業的重鎮。1980年代初期成立的新竹科學工業園區，吸引了大批國內與國際廠商的投資及許多高科技人力移居，因此有「臺灣矽谷」之稱，也因九降風特別強盛別稱「風城」。</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5 col-sm-12" data-bottom-top="filter: grayscale(100%)" data-center="filter: grayscale(0%)"><img src="http://twhere.1111.com.tw/include/shopPhoto.ashx?cNo=35438&amp;pid=75899" alt=""/></div>
-      <div class="col-md-7 col-sm-12">
-        <h3 data-0="transform: translateX(50px);opacity: 0" data-500="transform: translateX(0px);opacity: 1">美食</h3>
-        <p data-0="transform: translateX(50px);opacity: 0" data-500="transform: translateX(0px);opacity: 1">新竹的貢丸特別有名，嚴格來說，貢丸到處都有人會做，也非新竹一帶的豬肉特別鮮美。新竹對貢丸的貢獻，主要是科技上的：運用機器，令貢丸可大量生產。新竹的貢丸是以木棒或機器「摃（槌擊肉塊）」出來的。而新竹貢丸的材料必須用剛宰殺不久的新鮮溫體豬肉製作，也就是所謂的「活肉」。</p>
-      </div>
-    </div>
-  </div>
-</section>
-<hr>
-<section id="section_video">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-sm-12" id="video">
-        <!-- 16:9 aspect ratio -->
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SP-5C-T6Kpk"></iframe>
-          </div>
-      </div>
-      <div class="col-md-5 col-sm-12">
-        <h3>新竹旅遊</h3>
-        <p><b>影片內容為食尚玩嘎11-新竹風城當追風少年</b><br>想更了解可以點連結觀看唷</p>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="jumbotron" id="footer">
-  <div class="container">
-    <h3>與我聯繫</h3>
-    <form>
-    <input class="form-control" placeholder="Email"/>
-    <button class="btn btn-default" type="submit">送出</button>
-    </form>
-  </div>
-  <h6> <script>document.write(new Date().getFullYear())</script>©Written and coded by JerryLi.</h6>
-</div> 
-<div class="totop fa fa-arrow-up"> 
-<h5>TOP</h5>
-</div>
-</div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-  <script src="js/index.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
-</html>
 
+</html>
