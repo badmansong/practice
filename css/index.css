@@ -73,6 +73,7 @@ section#section_home .col-md-5 img {
 }
 
 .totop {
+    display: none;
     text-align: center;
     font-size: 30px;
     position: fixed;
