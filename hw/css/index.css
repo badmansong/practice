@@ -313,6 +313,9 @@ table {
 	text-align: left;
 
 }
+.map_l #googleMap{
+	height: 350px;
+}
 .map_l img{
 	width: 100%;	
 }
