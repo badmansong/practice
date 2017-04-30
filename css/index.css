@@ -80,6 +80,7 @@ section#section_home .col-md-5 img {
     right: 15px;
     color: #71788E;
     cursor: pointer;
+    display: none;
 }
 
 .totop:hover {
