@@ -20,5 +20,14 @@ $(document).ready(function() {
 		$('html,body').animate({scrollTop:$(target).offset().top})
 		return false;
 	})
+
+	$('a[data-info]').on('mouseover',function(e){
+		$('body').append('<div class="dataInfo">'+$(this).data('info')+'</div>')
+		$('.dataInfo').css({top:e.pageY+10+'px',left:e.pageX +10+'px'})
+	}).on('mousemove',function(e){
+		$('.dataInfo').css({top:e.pageY+10+'px',left:e.pageX +10+'px'})
+	}).on('mouseleave',function(){
+		$('.dataInfo').remove()
+	})
 	
 });

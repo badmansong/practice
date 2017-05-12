@@ -37,14 +37,35 @@ section#section_about {
     text-align: center;
 }
 
-section#section_about .img_wrap {
+.img_wrap {
     margin: 0 auto;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
+}
+.img_wrap1{
+    width:250px;
+    height: 150px;
 }
 
-section#section_about .img_wrap img {
+.img_wrap img {
     width: 100%;
+    height: auto;
+
+}
+
+section#section_project{
+    margin: 15px;
+    text-align: center
+}
+section#section_project .img_wrap{
+    width: 250px;
+    height: 200px;
+    /*padding: 0px;*/
+    border: solid 1px;
+        overflow: hidden;
+}
+section#section_project .img_wrap img{
+    width: 120%;
 }
 
 section#section_home .col-md-5 img {
@@ -86,7 +107,13 @@ section#section_home .col-md-5 img {
 .totop:hover {
     transform: scale(1.5);
 }
-
+.dataInfo{
+    width: 200px;
+    font-size: 24px;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px
+}
 @media(max-width: 768px) {
     header.jumbotron {
         
