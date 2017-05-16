@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	font-family: 微軟正黑體;
+	box-sizing: border-box;
+	user-select:none;
+}
+.clearfix:after{
+	content:'';
+	display: table;
+	clear: both;
+}
+
+.wrap{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	text-align: center;
+	background-color: #424242;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.infoBox{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 50px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.infoBox form,#logo,.result{
+	margin: 0px 30px;
+	display: inline-block;
+}
+.infoBox form span,.infoBox form input{
+	display: block;
+	text-align: left;
+	margin: 10px;
+}
+.infoBox form span{
+	color:#FFD366;
+	font-size: 18px;
+	font-weight: 700;
+}
+.infoBox form input{
+	height: 40px;
+	width: 250px;
+	border: 2px solid #FFD366;
+	border-radius: 10px;
+}
+.result{
+	min-width: 120px;
+	min-height: 120px;
+	color:#424242;
+	line-height: 120px;
+	background-color: #FFD366;
+	border-radius: 50%;
+	font-size: 24px;
+	font-weight: 700;
+	
+	position: relative;
+}
+.result p:first-child{
+	cursor:pointer;
+}
+#info{
+	right: -100px;
+    color: white;
+    position: absolute;
+    top: 0px;
+    font-size: 32px;
+    display: none;
+}
+.m #info{
+	display:block;
+}
+.result a{
+	display: none;
+	border-radius: 50%;
+	border:solid 3px #424242;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #86D73E;
+	top: 90px;
+	right: 0px;
+	
+}
+.result a img{
+	position: absolute;
+	display: block;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.m .result a{
+	display:block;
+
+}
+.result:hover{
+	background-color: #FFD366;
+	box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
+}
+.result:active{
+	background: #DEA921;
+}
+.m .result{
+	background-color: transparent;
+	border: 6px solid #86D73E;
+	color: #86D73E;
+}
+.m .result:hover{
+	box-shadow:none;
+}
+#save{
+    top: 90px;
+     display: none; 
+    position: relative;
+}
+
+.container{
+	width: 100%;
+	background-color: #ccc;
+	text-align: center;
+	padding: 5px;
+/*	display: flex;
+	justify-content: center;*/
+}
+.container h2{
+	/*display: block*/
+	padding-top: 48px;
+	padding-bottom: 36px;
+}
+.container .list{
+	width: 624px;
+	height: 62px;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-bottom: 16px;
+}
+.container .list li{
+	line-height: 62px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.container .list li span{
+	font-size: 12px
+}
+footer{
+	background-color: #FFD366;
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+footer #logo1{
+	width: 55px;
+	height: 55px;
+	padding-top: 18px;
+	
+}
+#logo1 img{
+	width: 100%;
+	    filter: brightness(30%);
+    -webkit-filter: brightness(30%);
+    -moz-filter: brightness(30%);
+    -o-filter: brightness(30%);
+    -ms-filter: brightness(30%);
+}
+.md{
+	color:#86D73E;
+}
+.light{
+	color:#31BAF9;
+}
+.heavy{
+	color:#FF1200;
+}

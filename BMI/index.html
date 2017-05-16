@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BMI紀錄器</title>
+	<link rel="shortcut icon" href="images/BMI.ico">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="wrap">
+		<header class="clearfix">
+			<div class="infoBox ">
+				<div id="logo"><img src="images/BMICLogo.png"></div>
+				<form>
+					<span>身高 cm</span>
+					<input id="H" type="number" min="100" placeholder="請輸入身高">
+					<span>體重 kg</span>
+					<input id="W" type="number" min="15" placeholder="請輸入體重">
+				</form>
+				<div class="result">
+				<p id="end">看結果</p>
+				<p id="info">過輕</p>
+				<a href="javascript:void(0);"><img src="images/icons_loop.png"></a>
+				</div>
+				<input id="save" type="button" value="儲存">
+				
+			</div> <!--infoBox end-->
+		</header>
+		<div class="container">
+			<h2>BMI紀錄表</h2>
+			<div class="listBox">
+<!-- 				<ul class="list">
+					<li>狀態</li>
+					<li>BMI</li>
+					<li>weight</li>
+					<li>height</li>
+					<li>06-16-2017</li>
+				</ul> -->
+			</div>
+		</div>
+		<footer>
+			<div id="logo1"><img src="images/BMICLogo.png"></div>
+		</footer>
+
+	</div>
+<!-- js -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
